@@ -9,6 +9,7 @@ export const useSwitch = (initialValue = false) => {
     //Evito di scrivere () => setIsOn(!isOn) ogni volta nel componente.
    const toggle = () => {
     setChange(!change)
+    //setChange(curr => !curr)
    }
    
   return [change, toggle]

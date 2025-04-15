@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useSwitch } from './useSwitch'
+import React from 'react'
 
 //1.
 // function App() {
@@ -20,3 +21,35 @@ import { useSwitch } from './useSwitch'
 
 //2.
 
+//non ce {} quindi non oggetto
+// import useDate from './useDate'
+
+// function App(){
+
+//   const currDate = useDate()
+
+//   return(
+//     <div>
+//       <h1>Data e ora attuali:</h1>
+//       <p>{currDate.toLocaleString()}</p>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+import useCustomPointer from "./useCustomPointer";
+
+function App() {
+  const customPointer = useCustomPointer("🔥");//<span>"🔥"</span>
+
+  return (
+    <div>
+      <h1>Sposta il mouse per vedere il cursore personalizzato!</h1>
+      {customPointer}
+    </div>
+  );
+}
+
+export default App;
