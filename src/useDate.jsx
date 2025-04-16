@@ -6,7 +6,7 @@ const useDate = () => {
     //Crea uno stato currDate con la data/ora nel momento in cui il componente viene renderizzato.
     const [currDate, setCurrDate] = useState(new Date())//stato che la data del momento in cui viene creato
 
-    //gestisce aggiornamento
+    //gestisce aggiornamento -rerender with new time
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrDate(new Date())

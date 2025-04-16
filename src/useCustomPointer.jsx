@@ -4,6 +4,8 @@ const useCustomPointer = (component) => {
     //cambiare cursore mouse
     //creare elemneto fittizio che segue mouse> 
     //quindi calcolare posizione mouse sempre
+    //questo elemento (fire) segue sempre il mouse quindi i pointer events sono attivi su di lui
+    
 
     const [position, setPosition] = useState({x:0, y:0})
 
@@ -22,7 +24,7 @@ style={{
     top: position.y,//fuoco stare nella stessa posizione del mouse
     left:position.x,//inteso come top lef x y
     transform: "translate(-50%, -50%)", //per girare l icona 
-    cursor: "none"
+    cursor: "none" //icona copre sempre freccia
 }}>
     {/* //inseriamo in un contenitore */}
     {component}

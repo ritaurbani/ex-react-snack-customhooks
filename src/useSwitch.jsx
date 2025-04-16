@@ -15,3 +15,18 @@ export const useSwitch = (initialValue = false) => {
   return [change, toggle]
     //posso tornare anceh oggetto: return { value: change, toggle }
 }
+
+// come uso Usare Questo Hook 
+//   Toggle UI: Interruttori, menu a scomparsa, modal.
+
+// Gestione stati booleani: Caricamenti, abilitazioni, flag.
+
+// Esempio (con callback):
+
+// const toggle = () => {
+//   setChange(prev => {
+//     const newValue = !prev;
+//     console.log(`Passato da ${prev} a ${newValue}`);
+//     return newValue;
+//   });
+// };
